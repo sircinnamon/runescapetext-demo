@@ -18,8 +18,15 @@ body {
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+	font-family: runescape, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
+	font-size: 1.2em;
+}
+
+@font-face {
+	font-family: runescape;
+	src: url('./fonts/runescape_uf.ttf') format('truetype');
+	src: url('./fonts/runescape_uf.woff') format('woff');
 }
 
 .App {
@@ -27,12 +34,13 @@ code {
 }
 
 .App-header {
-	background-color: #282c34;
+	background-color: #99582A;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
-	color: white;
+	color: #FFE6A7;
+	font-family: runescape, monospace;
 }
