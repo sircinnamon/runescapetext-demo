@@ -36,7 +36,6 @@ code {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 	color: #FFE6A7;
 	font-family: runescape, monospace;
 }
@@ -59,6 +58,13 @@ code {
 	margin-top: .2em;
 	margin-bottom: .5em;
 }
+.checklist input {
+	cursor: pointer;
+}
+.checklist label {
+	cursor: pointer;
+	user-select: none;
+}
 
 .text-input {
 	padding:  2em;
@@ -72,15 +78,51 @@ code {
 	border-radius: 1vmin;
 	border:  none;
 	background: #432818;
-	color:  #fff;
+	color:  #FFE6A7;
 	width: 45vw;
-	caret-color: #fff;
+	caret-color: #FFE6A7;
 }
 
 .text-input input::placeholder {
-	color: #999;
+	color: #BB9457;
 }
 .text-input input:focus {
 	border: none;
 	outline-width: 0;
+}
+
+.response-display {
+	border-radius:  1em;
+	border: 2px solid #432818;
+	min-height: 10vh;
+	min-width: 45vw;
+	display:  flex;
+	flex-direction: column;
+	align-items: center;
+	background: #BB9457;
+	color: #432818;
+}
+
+.response-display h3{
+	float:  left;
+	display:  block;
+	margin-top: 0.5em;
+	margin-left: 0.5em;
+	align-self: flex-start;
+	font-weight: normal;
+	cursor: pointer;
+	user-select: none;
+}
+
+.response-display img{
+	display:  block;
+	image-rendering: pixelated;
+	object-fit: contain;
+	max-width: 45vw;
+	max-height: 10vw;
+	cursor: pointer;
+}
+
+.response-display img.enlarged{
+	width: 100%;
 }
