@@ -31,16 +31,56 @@ code {
 
 .App {
 	text-align: center;
-}
-
-.App-header {
 	background-color: #99582A;
-	min-height: 100vh;
+	min-height:  100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-size: calc(10px + 2vmin);
 	color: #FFE6A7;
 	font-family: runescape, monospace;
+}
+
+.App-header {
+	font-size: calc(10px + 5vmin);
+}
+
+.checklist {
+	display: flex;
+	flex-direction: row;
+	border-radius:  1em;
+	border: 2px solid #6F1D1B;
+	padding:  1.5em;
+	margin-right: 2em;
+}
+
+.checklist h2 {
+	font-weight: normal;
+	margin-top: .2em;
+	margin-bottom: .5em;
+}
+
+.text-input {
+	padding:  2em;
+}
+
+.text-input input {
+	font-size: 4vmin;
+	font-family: runescape, monospace;
+	padding:  2vmin;
+	line-height: 100%;
+	border-radius: 1vmin;
+	border:  none;
+	background: #432818;
+	color:  #fff;
+	width: 45vw;
+	caret-color: #fff;
+}
+
+.text-input input::placeholder {
+	color: #999;
+}
+.text-input input:focus {
+	border: none;
+	outline-width: 0;
 }
