@@ -15,6 +15,7 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
 }
 
 code {
@@ -62,9 +63,33 @@ code {
 	margin-top: .2em;
 	margin-bottom: .5em;
 }
+
 .checklist input {
 	cursor: pointer;
 }
+
+.checklist-row {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.custom-checkbox {
+	background: #432818;
+	width: 4vmin;
+	height: 4vmin;
+	margin:  0.5vmin;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3.8vmin;
+}
+
+.custom-checkbox span {
+	line-height: 3.8vmin;
+	margin-top:  0.75vmin;
+}
+
 .checklist label {
 	font-size: calc(10px + 1.5vmin);
 	cursor: pointer;
@@ -100,8 +125,7 @@ code {
 .response-display {
 	border-radius:  1em;
 	border: 2px solid #432818;
-	height: 10vh;
-	max-height:  80px;
+	min-height: 10vh;
 	width: 80vw;
 	max-width: 500px;
 	display:  flex;
@@ -112,7 +136,7 @@ code {
 }
 
 .response-display h3{
-	font-size: calc(10px + 2.3vmin);
+	font-size: calc(10px + 1.8vmin);
 	float:  left;
 	display:  block;
 	margin-top: 0.5em;

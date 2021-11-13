@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Checkbox from "./checkbox"
 
 class ColorSelector extends Component {
 	constructor(props){
@@ -47,11 +48,12 @@ class ColorCheckbox extends Component {
 
 	render() {
 		return (
-			<>
-				<input type="checkbox" checked={this.props.current===this.props.color} onChange={this.pickMe}/>
+			<div className="checklist-row">
+				{/*<input type="checkbox" checked={this.props.current===this.props.color} onChange={this.pickMe}/>*/}
+				<Checkbox checked={this.props.current===this.props.color} onClick={this.pickMe} />
 				<label onClick={this.pickMe}>{this.props.color}</label>
 				<br/>
-			</>
+			</div>
 		)
 	}
 }
