@@ -16,12 +16,13 @@ class ResponseDisplay extends Component {
 	render() {
 		let outImg = ""
 		let img_class = ""
-		let header = "Output (Actual Size -Click to see enlarged)"
-		if(this.state.show_enlarged){
-			header = "Output (Enlarged -Click to see actual size)"
-			img_class = "enlarged"
-		}
+		let header = "Output"
 		if(this.props.currentUrl){
+			header = "Output (Actual Size -Click to see enlarged)"
+			if(this.state.show_enlarged){
+				header = "Output (Enlarged -Click to see actual size)"
+				img_class = "enlarged"
+			}
 			outImg=(
 				<img
 					className={img_class}
